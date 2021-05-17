@@ -103,27 +103,30 @@ const playStop = () => {
 
 const setMuteButton = () => {
   const html = `
-    <i class="fas fa-microphone"></i>
-    <span>Desligar Som</span>
+  <button type="button" class="btn btn-primary btn-circle btn-md"><i class="fas fa-microphone"></i></button>
+    
   `
   document.querySelector('.main__mute_button').innerHTML = html;
 }
 
 const setUnmuteButton = () => {
   const html = `
-    <i class="unmute fas fa-microphone-slash"></i>
-    <span>Ligar audio</span>
+  <button type="button" class="btn btn-primary btn-circle btn-md"><i class="unmute fas fa-microphone-slash"></i></button>
   `
   document.querySelector('.main__mute_button').innerHTML = html;
 }
 
 const setStopVideo = () => {
-  const html = `<i class="fas fa-video"></i>`
-  document.querySelector('.main__video_button').innerHTML = html;
+  const html = `
+  <button type="button" class="btn btn-primary btn-circle btn-md"><i class="fas fa-video"></i></button>
+  `
+  document.querySelector('.main__video_button ').innerHTML = html;
 }
 
 const setPlayVideo = () => {
-  const html = `<i class="stop fas fa-video-slash"></i>`
-
-  document.querySelector('.main__video_button'). innerHTML = html;
+  const html = `
+  <button type="button" class="btn btn-primary btn-circle btn-md"> <i class="stop fas fa-video-slash"></i></button>
+               
+  `
+  document.querySelector('.main__video_button').innerHTML = html;
 }

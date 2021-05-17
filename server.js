@@ -39,7 +39,4 @@ io.on('connection', socket => {
   })
 })
 
-let port = process.env.PORT||3040
-server.listen(port, () => {
-  console.warn(`localhost:${port}`)
-})
+server.listen(process.env.PORT||3040)
